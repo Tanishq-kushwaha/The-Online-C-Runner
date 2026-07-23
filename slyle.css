@@ -30,11 +30,33 @@
 }
 
 .terminal{
-    background:#0d1117;
-    color:#00ff7f;
+    background:#111;
+    color:#00ff66;
     min-height:220px;
     padding:20px;
-    border-radius:12px;
+    border-radius:10px;
     font-family:Consolas, monospace;
     overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+     transition:
+        max-height .6s ease,
+        opacity .5s ease;
+}
+
+.terminal.show{
+    max-height:300px;
+    opacity:1;
+}
+
+.terminal-header{
+    background:#222;
+    padding:10px 15px;
+    font-weight:bold;
+    border-bottom:1px solid #333;
+}
+.terminal-body{
+    padding:20px;
+    font-family:Consolas, monospace;
+    min-height:220px;
 }
