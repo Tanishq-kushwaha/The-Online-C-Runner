@@ -38,16 +38,6 @@
     border-radius:10px;
     font-family:Consolas, monospace;
     overflow: hidden;
-    max-height: 0;
-    opacity: 0;
-     transition:
-        max-height .6s ease,
-        opacity .5s ease;
-}
-
-.terminal.show{
-    max-height:300px;
-    opacity:1;
 }
 
 .terminal-header{
@@ -60,6 +50,7 @@
     padding:20px;
     font-family:Consolas, monospace;
     min-height:220px;
+    height: 350px;
     overflow-y:auto;
 }
 
