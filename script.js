@@ -10,6 +10,13 @@ runBtn.addEventListener("click", async () => {
     terminal.classList.toggle("show");
 
     if (terminal.classList.contains("show")) {
+        runBtn.innerText = "✖ Close";
+        runBtn.classList.remove("btn-success");
+        runBtn.classList.add("btn-danger");
+    }else{
+        runBtn.innerText = "▶ Run Code";
+        runBtn.classList.remove("btn-danger");
+        runBtn.classList.add("btn-success");
 
     }
 });
