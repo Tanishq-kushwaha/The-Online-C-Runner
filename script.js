@@ -1,16 +1,15 @@
-// Run Button ko select kiya
+// Selected the Run button
 const runBtn = document.getElementById("runBtn");
-
-// Terminal ko select kiya
+// Selected the terminal
 const terminal = document.getElementById("terminal");
 
+// When the button is clicked
+runBtn.addEventListener("click", async () => {
 
-// Button click hone par
-runBtn.addEventListener("click",()=>{
-
-    // Agar terminal band hai
-    // to show class add ho jayegi
-
+    // Adds/removes the terminal's show class
     terminal.classList.toggle("show");
 
+    if (terminal.classList.contains("show")) {
+
+    }
 });
