@@ -13,7 +13,7 @@
     background:#ffffff;
     color:rgb(0, 0, 0);
     font-family:Consolas, monospace;
-    border-radius:12px;
+    border-radius:0 0 12px 12px;
     resize:none;
     border:2px solid #444;
 }
@@ -67,27 +67,35 @@
 /* 
    Editor Header
 */
-
 .editor-header{
-
-    display: flex;
-    /* Children (h5 aur button) ek line me aa jayenge */
-
-    justify-content: space-between;
-    /* h5 left, button right */
-
-    align-items: center;
-    /* Dono vertically center */
-
-    margin-bottom: 15px;
-    /* Header aur textarea ke beech gap */
-
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#212529;
+    padding:12px 18px;
+    border-radius:12px 12px 0 0;
+    color:white;
 }
 
 .editor-header h5{
+    margin:0;
+    font-size:18px;
+    font-weight:700;
+    letter-spacing:.5px;
+}
+.editor-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#2b2d31;
+    padding:12px 18px;
+    border-radius:12px 12px 0 0;
+    border:1px solid #444;
+}
 
-    margin: 0;
-    /* h5 ka default margin hata diya */
-
-    font-weight: 600;
+.editor-title{
+    margin:0;
+    color:#fff;
+    font-size:18px;
+    font-weight:700;
 }
