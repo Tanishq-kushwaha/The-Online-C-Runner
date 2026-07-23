@@ -8,50 +8,33 @@
 }
 
 .editor{
-
     height:350px;
-
     background:#ffffff;
     color:rgb(0, 0, 0);
-
     font-family:Consolas, monospace;
-
     border-radius:12px;
-
     resize:none;
-
     border:2px solid #444;
 }
 
 .editor:focus{
-
     border-color:#0d6efd;
-
     box-shadow:none;
 }
 
 .run-btn{
-
     width:180px;
-
     height:50px;
-
     font-size:20px;
-
     border-radius:30px;
 }
 
 .terminal{
-
-    background:#111;
-
-    color:#00ff66;
-
+    background:#0d1117;
+    color:#00ff7f;
     min-height:220px;
-
     padding:20px;
-
     border-radius:12px;
-
     font-family:Consolas, monospace;
+    overflow: hidden;
 }
