@@ -13,45 +13,74 @@
 
 <body>
 
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container justify-content-center">
-            <a class="navbar-brand m-0 fw-bold" href="#">
-                The Online C Runner
-            </a>
-        </div>
-    </nav>
+    <body>
 
-    <div class="container mt-4">
+        <!-- Navbar -->
 
-        <!-- Code Editor -->
-        <textarea class="form-control editor" placeholder="Write your C code here..."></textarea>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container justify-content-center">
+                <a class="navbar-brand fw-bold m-0">
+                    The Online C Runner
+                </a>
+            </div>
+        </nav>
 
-        <!-- Action Bar -->
-        <div class="text-center my-3">
-            <button class="btn btn-success run-btn" id="runBtn">
-                ▶ Run Code
-            </button>
-        </div>
+        <!-- Main -->
 
-        <!-- Terminal Container -->
-        <div id="terminal" class="terminal">
+        <main class="container mt-4">
 
-            <!-- Terminal Header -->
-            <div class="terminal-header">
-                OUTPUT
+            <div class="row g-4">
+
+                <section class="col-lg-7">
+
+                    <!-- Editor Header -->
+                    <div class="editor-header">
+
+                        <h5 id="editor">C Editor</h5>
+
+                        <button class="btn btn-success run-btn" id="runBtn">
+                            ▶ Run Code
+                        </button>
+
+                    </div>
+
+                    <!-- Code Editor -->
+                    <textarea class="form-control editor" placeholder="Write your C code here..."></textarea>
+
+                </section>
+                <section class="col-lg-5">
+
+                    <div id="terminal" class="terminal">
+
+                        <div class="terminal-header">
+                            OUTPUT
+                        </div>
+
+                        <div class="terminal-body">
+                            Your output will appear here...
+                        </div>
+
+                    </div>
+
+                </section>
+
+
             </div>
 
-            <!-- Terminal Body -->
-            <div class="terminal-body">
-                Your output will appear here...
-            </div>
+        </main>
 
-        </div>
+    </body>
 
-        <script src="script.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

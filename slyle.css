@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
  } 
 
  body{
@@ -59,4 +60,34 @@
     padding:20px;
     font-family:Consolas, monospace;
     min-height:220px;
+    overflow-y:auto;
+}
+
+
+/* 
+   Editor Header
+*/
+
+.editor-header{
+
+    display: flex;
+    /* Children (h5 aur button) ek line me aa jayenge */
+
+    justify-content: space-between;
+    /* h5 left, button right */
+
+    align-items: center;
+    /* Dono vertically center */
+
+    margin-bottom: 15px;
+    /* Header aur textarea ke beech gap */
+
+}
+
+.editor-header h5{
+
+    margin: 0;
+    /* h5 ka default margin hata diya */
+
+    font-weight: 600;
 }

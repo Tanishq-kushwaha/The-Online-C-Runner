@@ -3,6 +3,8 @@ const runBtn = document.getElementById("runBtn");
 // Selected the terminal
 const terminal = document.getElementById("terminal");
 
+const heading = document.querySelector("#editor");
+
 // When the button is clicked
 runBtn.addEventListener("click", async () => {
 
