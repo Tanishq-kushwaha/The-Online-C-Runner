@@ -1,3 +1,6 @@
+prompt("hi");
+
+
 // Selected the Run button
 const runBtn = document.getElementById("runBtn");
 // Selected the terminal
