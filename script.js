@@ -9,33 +9,39 @@ const terminalText = document.querySelector("p");
 
 // When the button is clicked
 runBtn.addEventListener("click", async () => {
-   const code = textArea.value;
- 
-
-
+   
    // 1. Extracting the code written by the user from the textarea
    const userCode = document.querySelector('.editor').value;
 
-  // 2. Sending data to Wandbox using the Fetch API
+   // 2. Sending data to Wandbox using the Fetch API
    fetch("https://wandbox.org/api/compile.json", {
       method: "POST",// We are sending data, so post
       headers: {
          "Content-Type": "application/json" // Informing the server that our packet is in JSON format.
       },
       body: JSON.stringify({
-      //   JSON.stringify converts your JSON object into a text string so that it can travel across the internet.
+         //   JSON.stringify converts your JSON object into a text string so that it can travel across the internet.
          compiler: "gcc-head",
-         code: code,
+         code: userCode,
          save: false
       })
    })
       .then(response => response.json()) // When the server responds, parse it back into JSON.
       .then(data => {
-      // 3. The API response will appear here.
-        terminalText.innerText = data.program_output;
+         // 3. The API response will appear here.
+         if (data.compiler_error) {
+            terminalText.innerText = data.compiler_error;
+         }
+         else if (data.program_error) {
+            terminalText.innerText = data.program_error;
+         }
+         else {
+            terminalText.innerText = data.program_output;
+         }
+         console.log(data);
       })
       .catch(error => {
-       // If there is no internet or the API is down, this block will execute.
+         // If there is no internet or the API is down, this block will execute.
          console.error("Execution Error:", error);
       });
 
