@@ -38,7 +38,6 @@ runBtn.addEventListener("click", async () => {
          else {
             terminalText.innerText = data.program_output;
          }
-         console.log(data);
       })
       .catch(error => {
          // If there is no internet or the API is down, this block will execute.
