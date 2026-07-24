@@ -26,14 +26,14 @@ A modern, responsive **Online C Compiler** built using **HTML, CSS, Bootstrap, a
 
 ## 📸 Preview
 
-> *(Add your project screenshots here)*
+> ![The Online C Runner](assets/home.png)
+> ![The Online C Runner](assets/output.png)
 
 ```
 assets/
 │
 ├── home.png
-├── output.png
-└── mobile-view.png
+└── output.png
 ```
 
 ---
