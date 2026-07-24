@@ -1,6 +1,3 @@
-prompt("hi");
-
-
 // Selected the Run button
 const runBtn = document.getElementById("runBtn");
 // Selected the terminal
@@ -12,7 +9,7 @@ const terminalText = document.querySelector("pre");
 
 // When the button is clicked
 runBtn.addEventListener("click", async () => {
-   
+
    // 1. Extracting the code written by the user from the textarea
    const userCode = document.querySelector('.editor').value;
 
@@ -46,6 +43,17 @@ runBtn.addEventListener("click", async () => {
          // If there is no internet or the API is down, this block will execute.
          console.error("Execution Error:", error);
       });
+
+});
+
+
+window.addEventListener("load", () => {
+
+   const modal = new bootstrap.Modal(
+      document.getElementById("devModal")
+   );
+
+   modal.show();
 
 });
 
