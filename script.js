@@ -5,7 +5,7 @@ const terminal = document.getElementById("terminal");
 
 const textArea = document.querySelector("textarea");
 
-const terminalText = document.querySelector("p");
+const terminalText = document.querySelector("pre");
 
 // When the button is clicked
 runBtn.addEventListener("click", async () => {
