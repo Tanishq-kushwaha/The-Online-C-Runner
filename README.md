@@ -134,8 +134,8 @@ If you'd like to improve this project:
 
 **Tanishq Kushwaha**
 
-* GitHub: https://github.com/your-github-username
-* Portfolio: https://your-portfolio-link.com
+* GitHub: https://github.com/Tanishq-kushwaha
+* Portfolio: https://tanishq-kushwaha.github.io/tanishq-portfolio/
 
 ---
 
