@@ -3,8 +3,6 @@ const runBtn = document.getElementById("runBtn");
 // Selected the terminal
 const terminal = document.getElementById("terminal");
 
-const heading = document.querySelector("#editor");
-
 const textArea = document.querySelector("textarea");
 
 const terminalText = document.querySelector("p");
@@ -13,4 +11,19 @@ const terminalText = document.querySelector("p");
 runBtn.addEventListener("click", async () => {
    let code = textArea.value;
    terminalText.innerText = code;
+});
+
+
+const url = fetch("(https://wandbox.org/api/compile.json)")
+
+.then(response => response.json())
+.then(data => {
+
+    console.log(data);
+
+})
+.catch(error => {
+
+    console.error(error);
+
 });
