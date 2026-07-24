@@ -13,59 +13,75 @@
 
 <body>
 
-        <!-- Navbar -->
+    <!-- Navbar -->
 
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container justify-content-center">
-                <a class="navbar-brand fw-bold m-0">
-                    The Online C Runner
-                </a>
-            </div>
-        </nav>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container justify-content-center">
+            <a class="navbar-brand fw-bold m-0">
+                The Online C Runner
+            </a>
+        </div>
+    </nav>
 
-        <!-- Main -->
+    <!-- Main -->
 
-        <main class="container mt-4">
+    <main class="container mt-4">
 
-            <div class="row g-4">
+        <div class="row g-4">
 
-                <section class="col-lg-7">
+            <section class="col-lg-7">
 
-                    <!-- Editor Header -->
-                    <div class="editor-header">
+                <!-- Editor Header -->
+                <div class="editor-header">
 
-                       <h5 class="editor-title">C Editor</h5>
+                    <h5 class="editor-title">C Editor</h5>
 
-                        <button class="btn btn-success run-btn" id="runBtn">
-                            ▶ Run Code
-                        </button>
+                    <button class="btn btn-success run-btn" id="runBtn">
+                        ▶ Run Code
+                    </button>
 
+                </div>
+
+                <!-- Code Editor -->
+                <textarea class="form-control editor" placeholder="Write your C code here..."></textarea>
+
+            </section>
+            <section class="col-lg-5">
+
+                <div id="terminal" class="terminal">
+
+                    <div class="terminal-header">
+                        OUTPUT
                     </div>
 
-                    <!-- Code Editor -->
-                    <textarea class="form-control editor" placeholder="Write your C code here..."></textarea>
-
-                </section>
-                <section class="col-lg-5">
-
-                    <div id="terminal" class="terminal">
-
-                        <div class="terminal-header">
-                            OUTPUT
-                        </div>
-
-                        <div class="terminal-body">
-                           <pre> Your output will appear here...</pre>
-                        </div>
-
+                    <div class="terminal-body">
+                        <pre> Your output will appear here...</pre>
                     </div>
 
-                </section>
+                </div>
+
+            </section>
 
 
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container text-center">
+            <p class="footer-text">
+                Crafted with ❤️ and countless cups of chai by
+                <span class="developer-name">Tanishq Kushwaha</span>
+            </p>
+
+            <div class="footer-links">
+                <a href="https://github.com/your-github-username" target="_blank">GitHub</a>
+                <span>•</span>
+                <a href="https://your-portfolio-link.com" target="_blank">Portfolio</a>
             </div>
-
-        </main>
+        </div>
+    </footer>
 
 
     <script src="script.js"></script>
