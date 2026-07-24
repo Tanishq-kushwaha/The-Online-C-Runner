@@ -9,37 +9,33 @@ const terminalText = document.querySelector("p");
 
 // When the button is clicked
 runBtn.addEventListener("click", async () => {
-   let code = textArea.value;
-   terminalText.innerText = code;
+   const code = textArea.value;
+ 
 
 
-   // 1. Textarea se user ka likha hua C code nikalna
-   // Dhyan rahe, humne tumhari 'editor' class ko yahan select kiya hai
+   // 1. Extracting the code written by the user from the textarea
    const userCode = document.querySelector('.editor').value;
 
-   // 2. Fetch API ka use karke Wandbox ko data bhejna
+  // 2. Sending data to Wandbox using the Fetch API
    fetch("https://wandbox.org/api/compile.json", {
-      method: "POST", // Hum data bhej rahe hain, isliye POST
+      method: "POST",// We are sending data, so post
       headers: {
-         "Content-Type": "application/json" // Server ko bata rahe hain ki humara packet JSON format me hai
+         "Content-Type": "application/json" // Informing the server that our packet is in JSON format.
       },
       body: JSON.stringify({
-         // JSON.stringify tumhare JS object ko ek text string me badal deta hai taaki wo internet par travel kar sake
+      //   JSON.stringify converts your JSON object into a text string so that it can travel across the internet.
          compiler: "gcc-head",
          code: code,
          save: false
       })
    })
-      .then(response => response.json()) // Jab server jawab dega, toh usko wapas JSON me parse karna
+      .then(response => response.json()) // When the server responds, parse it back into JSON.
       .then(data => {
-         // 3. API ka response yahan aayega
-         console.log("Wandbox API Response:", data);
-
-         // Yahan tumhara code aayega jahan tum output ko apne '.terminal-body' me display karaoge
-         // Example: document.querySelector('.terminal-body').innerText = data.program_message;
+      // 3. The API response will appear here.
+        terminalText.innerText = data.program_output;
       })
       .catch(error => {
-         // Agar internet nahi hai ya API down hai, toh ye block chalega
+       // If there is no internet or the API is down, this block will execute.
          console.error("Execution Error:", error);
       });
 
