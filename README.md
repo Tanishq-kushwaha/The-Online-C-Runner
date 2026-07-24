@@ -73,7 +73,7 @@ The-Online-C-Runner
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-github-username/the-online-c-runner.git
+git clone https://github.com/Tanishq-kushwaha/The-Online-C-Runner
 ```
 
 ### Open Project
