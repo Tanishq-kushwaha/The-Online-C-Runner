@@ -10,6 +10,13 @@ const terminalText = document.querySelector("pre");
 // When the button is clicked
 runBtn.addEventListener("click", async () => {
 
+   terminalText.innerHTML = `
+         <div class="d-flex align-items-center gap-2">
+             <div class="spinner-border spinner-border-sm text-success"></div>
+                  <span>Compiling & Running...</span>
+             </div>
+          `;
+
    // 1. Extracting the code written by the user from the textarea
    const userCode = document.querySelector('.editor').value;
 
@@ -46,14 +53,4 @@ runBtn.addEventListener("click", async () => {
 
 });
 
-
-window.addEventListener("load", () => {
-
-   const modal = new bootstrap.Modal(
-      document.getElementById("devModal")
-   );
-
-   modal.show();
-
-});
 
