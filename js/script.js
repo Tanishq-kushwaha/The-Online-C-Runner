@@ -34,6 +34,13 @@ const stdinInput = document.getElementById("stdinInput");
 
 // Run Code
 runBtn.addEventListener("click", async () => {
+
+    // Smooth scroll to output terminal (especially useful on mobile)
+    document.getElementById("terminal").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+
     // Loading state
     output.innerHTML = `
         <div class="d-flex align-items-center gap-2">
