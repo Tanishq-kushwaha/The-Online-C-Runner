@@ -87,3 +87,10 @@ runBtn.addEventListener("click", async () => {
 clearBtn.addEventListener("click", () => {
    output.innerText = "Your output will appear here...";
 });
+
+
+document.addEventListener('keydown', (e) => {
+    if (e.ctrlKey && e.key === 'Enter') {
+        runBtn.click();
+    }
+});
