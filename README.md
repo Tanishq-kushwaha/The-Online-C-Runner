@@ -1,25 +1,30 @@
 # 🚀 The Online C Runner
 
-A modern, responsive **Online C Compiler** built using **HTML, CSS, Bootstrap, and Vanilla JavaScript**. This project allows users to write, compile, and execute C programs directly in the browser using the **Wandbox API**.
+A clean, modern and fully frontend-based **Online C Compiler**.  
+Write, compile and execute C programs directly in your browser using the **Wandbox API**.
 
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![HTML](https://img.shields.io/badge/HTML-5-orange)
 ![CSS](https://img.shields.io/badge/CSS-3-blue)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-purple)
-
+![Monaco Editor](https://img.shields.io/badge/Monaco_Editor-0.45-blue)
 ---
 
-## 📌 Features
+## ✨ Features
 
-* 🖥️ Clean & Modern UI
-* 📱 Fully Responsive Design
-* ⚡ Compile & Run C Programs
-* 📤 Real-time Output Terminal
-* ❌ Compiler Error Display
-* 🔄 Loading State while Compiling
-* 🎨 Bootstrap + Custom CSS
-* 🌐 API Integration using Wandbox
+- 🖥️ **Monaco Editor** (VS Code like experience)
+- 🎨 Syntax Highlighting for C language
+- 🌙 Dark Theme Editor
+- 📱 Fully Responsive Design
+- ⚡ Compile & Run C Programs using Wandbox API
+- ⌨️ Program Input Support (`stdin`)
+- 📤 Real-time Output Terminal
+- ❌ Compiler Error & Runtime Error Display
+- 🔄 Loading Spinner while Compiling
+- 📜 Smooth Scroll to Output (especially useful on mobile)
+- 🧹 Clear Output Button
+- 🎯 Clean and Minimal UI
 
 ---
 
@@ -43,6 +48,7 @@ assets/
 * CSS3
 * Bootstrap 5
 * Vanilla JavaScript
+* Monaco Editor
 * Wandbox API
 
 ---
@@ -105,8 +111,6 @@ Hello, World!
 
 ## 📖 Future Improvements
 
-* Monaco Editor
-* Syntax Highlighting
 * Themes (Dark / Light)
 * Download Source Code
 * Copy Output
