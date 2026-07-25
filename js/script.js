@@ -88,7 +88,7 @@ clearBtn.addEventListener("click", () => {
    output.innerText = "Your output will appear here...";
 });
 
-
+// Ctrl + Enter = Run button
 document.addEventListener('keydown', (e) => {
     if (e.ctrlKey && e.key === 'Enter') {
         runBtn.click();
