@@ -16,7 +16,6 @@ A modern, responsive **Online C Compiler** built using **HTML, CSS, Bootstrap, a
 * 📱 Fully Responsive Design
 * ⚡ Compile & Run C Programs
 * 📤 Real-time Output Terminal
-* 🎯 Input (stdin) Support
 * ❌ Compiler Error Display
 * 🔄 Loading State while Compiling
 * 🎨 Bootstrap + Custom CSS
