@@ -85,7 +85,11 @@ runBtn.addEventListener("click", async () => {
       const data = await response.json();
 
       if (data.compiler_error) {
-         output.innerText = data.compiler_error;
+         if(data.compiler_error.includes("OCI runtime error")){
+            output.innerText = "🚨 Server is currently busy due to high traffic.\nPlease try again in a few minutes.";
+         }else{
+            output.innerText = data.compiler_error;
+         }
       } else if (data.program_error) {
          output.innerText = data.program_error;
       } else {
