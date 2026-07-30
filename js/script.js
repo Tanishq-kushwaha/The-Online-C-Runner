@@ -1,3 +1,12 @@
+// Show Under Development Modal on Page Load
+window.addEventListener("load", () => {
+    const devModalElement = document.getElementById("devModal");
+    if (devModalElement) {
+        const modal = new bootstrap.Modal(devModalElement);
+        modal.show();
+    }
+});
+
 let editor;
 
 // Monaco Editor Initialize
