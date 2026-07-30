@@ -42,6 +42,15 @@ runBtn.addEventListener("click", async () => {
       block: "start"
    });
 
+
+   const userCode = editor.getValue();
+   const stdin = stdinInput.value;
+
+   if (userCode.trim() === "") {
+      output.innerText = "Error: Editor is empty. Please write some C code first.";
+      return;
+   }
+
    // Loading state
    output.innerHTML = `
         <div class="d-flex align-items-center gap-2">
@@ -50,13 +59,6 @@ runBtn.addEventListener("click", async () => {
         </div>
     `;
 
-   const userCode = editor.getValue();
-   const stdin = stdinInput.value;
-
-   if(userCode.trim() === ""){
-      output.innerText = "Error: Editor is empty. Please write some C code first.";
-      return;
-   }
    try {
       const response = await fetch("https://wandbox.org/api/compile.json", {
          method: "POST",
@@ -94,7 +96,7 @@ clearBtn.addEventListener("click", () => {
 
 // Ctrl + Enter = Run button
 document.addEventListener('keydown', (e) => {
-    if (e.ctrlKey && e.key === 'Enter') {
-        runBtn.click();
-    }
+   if (e.ctrlKey && e.key === 'Enter') {
+      runBtn.click();
+   }
 });
