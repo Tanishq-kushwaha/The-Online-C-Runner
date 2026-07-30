@@ -53,6 +53,10 @@ runBtn.addEventListener("click", async () => {
    const userCode = editor.getValue();
    const stdin = stdinInput.value;
 
+   if(userCode.trim() === ""){
+      output.innerText = "Error: Editor is empty. Please write some C code first.";
+      return;
+   }
    try {
       const response = await fetch("https://wandbox.org/api/compile.json", {
          method: "POST",
